@@ -72,6 +72,16 @@ So analyses types:
 
 
 %}
+
+%% to generate the data struct from raw files use the following
+
+edit Elif_Struct_Builder
+
+%% if you already have a struct, load it here
+myfile='ElifData 3-11-2020.mat';
+mydir='E:\Elif DG GABAa project Data';
+load(fullfile(mydir,myfile));
+
 %%
 % 1. behavior analysis
 % first, gather 2d running speeds, bouts of running, and occupancy maps
